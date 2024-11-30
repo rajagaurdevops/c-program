@@ -1,0 +1,176 @@
+#include <stdio.h> // Correct header file for input/output
+// conditional statement
+// if-else
+int main() {
+     int age;
+     printf("Enter your age: "); 
+     scanf("%d", &age);         
+
+     if (age > 18)  {
+         printf("Adult\n");         // without currly {}
+     }    
+     else {
+         printf("Not an adult\n");  // without currly {}
+      }
+     return 0;
+ }
+
+
+// else-if
+ int main() {
+     int age;
+     printf("enter age:");
+     scanf("%d",&age);
+
+     if (age >= 18){
+         printf("adult \n");
+     }
+     else if (age > 13 && age < 18)    {
+         printf("teenger \n");
+     }
+     else{
+         printf("child \n");
+     }
+     return 0;
+ }
+    
+
+// ternary operators
+ int main() {
+     int age;
+     printf("enter age:");
+     scanf("%d",&age);
+
+    // age >= 18 (question marks) printf("adult \n") : printf("not adult \n");
+
+     return 0;
+ }
+  
+
+// // switch statement
+ int main() {
+     int day;   // 1-Mon, 2-Tues, 3-Wed, ..., 7-Sun
+     printf("Enter day (1-7): ");
+     scanf("%d", &day);
+
+     switch (day) {
+         case 1: 
+             printf("Monday\n");
+             break;
+         case 2: 
+             printf("Tuesday\n");
+             break;
+         case 3: 
+             printf("Wednesday\n");
+             break;
+         case 4: 
+             printf("Thursday\n");
+             break;
+         case 5: 
+             printf("Friday\n");
+             break;
+         case 6: 
+             printf("Saturday\n");
+             break;
+         case 7: 
+             printf("Sunday\n");
+             break;
+         default: 
+             printf("Not a valid day\n");
+     } 
+
+     return 0; 
+ }
+
+
+
+// nested if
+
+ int main() {
+     int number;
+     printf("enter number:");
+     scanf("%d",&number);
+
+     if (number >= 0) {
+         printf("positive \n");
+         if (number%2 == 0) {
+             printf("even \n");
+         } else {
+             printf("odd \n");
+         }
+      
+     } else {
+         printf("negative \n");
+     }
+
+     return 0;
+ }
+
+
+//q.1 write a program to check if a student passed or failed.
+ int main() {
+     int marks;
+     printf("enter your marks:");
+     scanf("%d",&marks);
+
+     if (marks >= 30) {
+         printf("pass \n");
+     } else{
+         printf("fail \n");
+     }
+
+     return 0;
+ }
+      //# and
+
+ int main() {
+     int marks;
+     printf("enter marks (0-100)");
+     scanf("%d", &marks);
+
+     if(marks >= 0 && marks <= 30) {
+         printf("FAIL \n");
+     } else if (marks > 30 && marks <= 100){
+         printf("PASS \n");
+     } else {
+         printf("wrong marks \n");
+     }
+
+     return 0;
+    
+    
+ }
+
+// ternary
+//marks <= 30(question marks) printf("fail \n") : printf("pass \n");
+
+
+//q.2 write a program to give grades to a student
+// marks < 30 is c grade
+// 30 <= marks < 70 is b
+// 70 <= marks < 90 is a
+// 90 <= marks <= 100 is a+
+
+ int main() {
+     int marks;
+     printf("enter your number (0-100)");
+     scanf("%d", &marks);
+
+     if(marks < 30) {
+       printf("grade c \n");
+     } else if (marks >= 30 && marks < 70 ) {
+       printf("grade b \n");
+     } else if (marks >= 70 && marks < 90) {
+             printf("grade a \n");
+     }
+     else{
+       printf("grade a+ \n");
+     }
+
+     return 0;
+      
+ }
+
+
+
+

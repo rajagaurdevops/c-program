@@ -1,0 +1,20 @@
+// print hello world in c language
+#include<stdio.h>
+int main()
+{
+    printf("hello world");
+}
+
+
+// two number additon program in c
+#include<stdio.h>
+
+int main(){
+int a = 5;
+int b = 5;
+int sum = a+b;
+{
+printf("addition %d",sum);
+}
+return 0;
+}
